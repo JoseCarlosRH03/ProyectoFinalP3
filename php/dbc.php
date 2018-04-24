@@ -24,6 +24,5 @@
     {
        self::$conexion->close(); 
     }
-
  }
 ?>
