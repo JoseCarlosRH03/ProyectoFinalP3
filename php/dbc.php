@@ -12,15 +12,18 @@
         {
             if(self::$conexion == null )
             {
-                self::$conexion = new PDO('mysql:host=localhost;dbname=proyectofinal','root','');
-                echo "conexion ok";  
+                self::$conexion = new PDO('mysql:host=localhost;dbname=proyectofinal','root',''); 
             }
         }catch(PDOExcepction $e){
             echo "Error: ". $e->getmessage();
         }
-
         return self::$conexion;
     }
+
+    public static function GetDesconectar()
+    {
+       self::$conexion->close(); 
+    }
+
  }
-    dbc::GetConexion();
 ?>

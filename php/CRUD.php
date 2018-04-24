@@ -8,16 +8,11 @@ class CRUD
    private conexion;
    
 
-   public function __construct()
-   { 
-
-
-   }
-
+   public function __construct(){ }
 
    public SetSelect($contrasena, $nombre)
    {
-      
+      $this->conexion = dbc::GetConexion();
    }
   
 }
