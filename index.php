@@ -22,14 +22,14 @@
                             <h3>Acceso al Sistema</h3>
                             <div>
                                 <label for="nombre"> Nombre:<signo>*</signo></label>
-                                <input type="text" id="nombre" name="Nombre" class="letra">
+                                <input type="text" id="nombre" name="nombre" class="letra">
                                 <ul id="errorNombre">
                     
                                 </ul>
                             </div>
                             <div>
                                 <label for="contrasena">Password:<signo>*</signo></label>
-                                <input type="password"  id="contrasena" name="Contraseña">  
+                                <input type="password"  id="contrasena" name="password">  
                                 <ul id="errorPassword">
                     
                                 </ul>
@@ -47,6 +47,7 @@
      </footer>
     </section>
     
-<script src="js/index.js"></script>    
+<script src="js/jquey-min.js"></script>      
+<script src="js/index.js"></script>   
 </body>
 </html>
