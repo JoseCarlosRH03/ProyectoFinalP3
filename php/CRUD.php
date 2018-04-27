@@ -13,7 +13,7 @@ class CRUD
    public function SelectEmpleado($nombre,$contrasena)
    {
       $this->conexion = dbc::GetConexion();
-      $this->busqueda = $this->conexion->prepare('SELECT * FROM empleados WHERE nombre = :nombre AND contrasena = :contrasena');
+      $this->busqueda = $this->conexion->prepare('SELECT * FROM empleado WHERE nombre = :nombre AND contrasena = :contrasena');
       $this->busqueda->execute(array(':nombre'=>$nombre , 'contrasena'=> $contrasena));
       return $this->Guardar_1();  
    }
