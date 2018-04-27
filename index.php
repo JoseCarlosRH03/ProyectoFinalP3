@@ -17,8 +17,8 @@
      </header>
      <div id="cuerpo"> 
         <div id="login">
-                <form id="formulario"> 
-                    <div id="formulario">
+                <form id="formulario" > 
+                    <div class="formulario">
                             <h3>Acceso al Sistema</h3>
                             <div>
                                 <label for="nombre"> Nombre:<signo>*</signo></label>
@@ -34,20 +34,22 @@
                     
                                 </ul>
                             </div> 
-                              <p>los valores con (*) rojo son obligatorios</p>   
+                              <p>los valores con (*) rojo son obligatorios</p>  
                     </div>
                         <div id="vib-boton">
-                            <input type="submit" value="Enviar" id="boton">
+                            <input type="button" value="Enviar" id="boton">·
                         </div>   
-                    </form>  
+                    </form>
+                   
         </div>
+        
      </div>
      <footer>
         <p>Universidad Autónoma de Santo Domingo (UASD)</p>
      </footer>
     </section>
     
-<script src="js/jquey-min.js"></script>      
+<script src="js/jquery-min.js"></script>      
 <script src="js/index.js"></script>   
 </body>
 </html>

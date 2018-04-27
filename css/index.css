@@ -48,7 +48,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     margin: auto;
-    margin-bottom: 23%;
+
 }
 
 #login{
@@ -60,7 +60,7 @@ a:hover{
     border-color:  #0F218D;
 }
 
-#vib-boton, #formulario{
+#vib-boton, .formulario{
     margin: 20px;
     display: inline-block;
 }
@@ -77,7 +77,8 @@ footer{
     background-color: #0F218D;
     text-align: center;
     color: white;
-    margin: 0;
+
 }
+
 
 /* media */
