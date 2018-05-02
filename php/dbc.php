@@ -19,10 +19,5 @@
         }
         return self::$conexion;
     }
-
-    public static function GetDesconectar()
-    {
-       self::$conexion->close(); 
-    }
  }
 ?>

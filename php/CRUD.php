@@ -1,5 +1,4 @@
 <?php
-
 include_once("dbc.php");
 
 class CRUD

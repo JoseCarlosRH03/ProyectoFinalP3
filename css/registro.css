@@ -1,0 +1,145 @@
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0F218D;
+    margin: 0;
+
+}
+
+#cuerpo{
+    margin-top: 38px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+}
+
+#persona{
+
+width:40%;
+height: 255px;
+margin: auto;
+border: solid 2px ;
+border-radius: 5px;
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+border-color:  #0F218D;
+display: none;
+}
+
+#cuerpo1,#cuerpo3{
+ width:99%;
+}
+
+#cuerpo2,#cuerpo4{
+width: 100px;
+display: flex;
+flex-direction:column;
+justify-content: flex-end;
+}
+
+#boton{
+    margin:0px 5px 5px 0px;
+}
+input{
+    margin-top: 2px; 
+    display:block;
+}
+
+input, label, h3{
+    margin-left: 20px;
+}
+
+input{
+    margin-bottom: 10px;
+    margin-left: 35px;
+    width: 50%;
+}
+
+#vehiculo{
+    width:60%;
+    height: 280px;
+    margin: auto;
+    border: solid 2px ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    border-color:  #0F218D;
+}
+
+#cuerpo3{
+    width: 90%;
+    display: flex;
+}
+#bloque1,#bloque2{
+    width:40%;
+}
+
+#cuerpo3 input{
+    width: 80%;
+}
+
+#cuerpo4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 40px;
+}
+
+#cuerpo4 input{
+    width:10%;
+    margin: auto;
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+#bloque2{
+ margin-top: 60px;
+}
+
+
+
+/*forma*/
+
+a {
+    color: black;
+    text-align: center;
+    width: 180px; 
+    height: 20px; 
+    position: relative; 
+    background: white; 
+}
+
+a:after { 
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 0;
+    height: 0; 
+    border-left: 10px solid#0F218D;
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent; 
+}
+
+a:before { 
+    content: ""; 
+    position: absolute; 
+    right: -10px; 
+    bottom: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid white; 
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent; 
+}
