@@ -75,23 +75,30 @@ if(isset($_SESSION['usuario'])){
     </div>
      </form>
      <div id="datos">
-
       <img src="../../img/2.png" id="foto">
-     <div id="datos_p">
+       <div id="datos_p">
         <div  id="bloque1_datos">
-          <p id="nombre_datos"><strong>Nombre:</strong> </p>
-          <p id="apellido_datos"><strong>Apellido:</strong> </p>
-          <br><br>
-          <p id="cedula_datos"><strong>Cedula:</strong> </p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre_datos">
+        <label for="apellido" >Apellido:</label>
+        <input type="text" id="apellido_datos">
+        <label for="cedula">Cedula:</label>
+        <input type="text" id="cedula_datos">
         </div>
          <div id="bloque2_datos">
-         <p id="matricula_datos"><strong>Matricula:</strong> </p>
-         <p id="placa_datos"><strong>Placa:</strong> </p>
-         <p id="marca_datos"><strong>Marca:</strong> </p>
-         <br><br>
-         <p id="modelo_datos"><strong>Modelo:</strong> </p>
-         <p id="color_datos"><strong>Color:</strong> </p>
+            <label for="matricula">Matricula:</label>
+            <input type="text" id="matricula_datos">
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa_datos">
+            <label for="modelo">Marca:</label>
+            <input type="text" id="marca_datos">
          </div>
+         <div id="bloque3_datos">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo_datos">
+            <label for="modelo">Color:</label>
+            <input type="text" id="color_datos">
+            </div>
      </div>
      <div id="botones_datos">
       <input type="button" value="Atras" id="boton4">
