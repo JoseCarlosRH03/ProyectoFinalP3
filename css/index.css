@@ -27,7 +27,6 @@ nav{
     flex-direction: row-reverse;
     background-color: #0F218D;
     margin: 0;
-
 }
 
 a{
@@ -42,13 +41,11 @@ a:hover{
 }
 
 #cuerpo{
-
     width: 100%;
-    height:420px;
+    height:458px;
     display: flex;
     flex-direction: row;
     margin: auto;
-
 }
 
 #login{
@@ -58,6 +55,10 @@ a:hover{
     border-radius: 7px;
     border-style: solid;
     border-color:  #0F218D;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    
 }
 
 #vib-boton, .formulario{
@@ -77,9 +78,5 @@ footer{
     background-color: #0F218D;
     text-align: center;
     color: white;
-    margin-top: 3.4%;
-
+    margin-top: 4.4%;
 }
-
-
-/* media */

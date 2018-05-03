@@ -5,11 +5,9 @@ nav{
     justify-content: center;
     background-color: #0F218D;
     margin: 0;
-
 }
 
 #cuerpo{
-    margin-top: 38px;
     width:100%;
     display: flex;
     flex-direction: row;
@@ -21,17 +19,20 @@ form{
 }
 
 #persona{
-
 width:40%;
 height: 255px;
 margin: auto;
-border: solid 2px ;
+border: solid 2px;
+margin-top:60px; 
 border-radius: 5px;
 display: flex;
 flex-direction:row;
 justify-content: space-between;
 border-color:  #0F218D;
-display: none;
+-webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+
 }
 
 #cuerpo1,#cuerpo3{
@@ -39,15 +40,22 @@ display: none;
 }
 
 #cuerpo2,#cuerpo4{
-width: 100px;
+width: 120px;
 display: flex;
 flex-direction:column;
 justify-content: flex-end;
 }
 
+#boton1{
+    width:90px;
+    margin:auto;
+    margin-top: 220px;
+}
+
 #boton{
     margin:0px 5px 5px 0px;
 }
+
 input{
     margin-top: 2px; 
     display:block;
@@ -67,11 +75,16 @@ input{
     width:60%;
     height: 280px;
     margin: auto;
+    margin-top: 60px;
     border: solid 2px ;
     border-radius: 5px;
     display: flex;
     flex-direction:column;
     border-color:  #0F218D;
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    display: none; 
 }
 
 #cuerpo3{
@@ -106,18 +119,74 @@ input{
 #bloque2{
  margin-top: 60px;
 }
+form{
 
+}
+#datos{
+    width:50%;
+    height: 320px;
+    margin: auto;
+    color: white;
+    border: solid 2px ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    border-color:  #0F218D;
+    background-color: rgba(15,33,141,0.8);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    display: none;
+}
+#foto{
+    width: 100px;
+    margin-left:4% ;
+    margin-top: -50px;
+}
+#datos_p{
+    height: 70%;
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+    margin-left: 100px;
+}
 
+#bloque1_datos{
+    margin-top: 15px;
+}
 
+#bloque2_datos{
+    margin-top: 25px;
+}
+
+#datos_p p{
+ display: inline;
+ margin-left: 25px;
+ text-align: center;
+}
+
+strong{
+    margin-right: 15px;
+}
+#botones_datos{
+    display: flex;
+    flex-direction:row;
+}
+#botones_datos input{
+display: inline;
+width:13%;
+margin: auto;
+margin-bottom: 5px;
+}
 /*forma*/
 
 a {
-    color: black;
+    color: white;
     text-align: center;
     width: 180px; 
     height: 20px; 
     position: relative; 
-    background: white; 
+    background: #0F218D; 
 }
 
 a:after { 
@@ -139,7 +208,16 @@ a:before {
     bottom: 0; 
     width: 0; 
     height: 0; 
-    border-left: 10px solid white; 
+    border-left: 10px solid #0F218D; 
     border-top: 10px solid transparent; 
     border-bottom: 10px solid transparent; 
+}
+
+#a1{
+    color:black;
+    background: white; 
+}
+
+#a1::before{
+    border-left: 10px solid  white; 
 }
