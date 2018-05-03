@@ -25,7 +25,7 @@ $('#boton2').on('click',function(){
         "background":"#0F218D" 
     })
     $( "<style> #a2:before { border-left:10px solid  #0F218D; }</style>" ).appendTo( "#a2" );
-
+    valor = 0;
 });
 
 $('#boton3').on('click',function(){
@@ -78,8 +78,17 @@ $('.validar').on('focusout',function(){
         $(this).css({"border-color":""});
         $('.boton').attr("disabled", false);
       }
-       
-
 })
+
+$('.letras').on('input',function(){
+        this.value = (this.value).replace(/[^A-Za-z]/g,'');
+});
   
+$('.numeros').on('input',function(){
+    this.value = (this.value).replace(/[^0-9]/g,'');
+});
+
+$('.numerosLetras').on('input',function(){
+    this.value = (this.value).replace(/[^A-Za-z0-9]/g,'');
+});
 });

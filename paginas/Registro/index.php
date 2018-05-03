@@ -38,11 +38,11 @@ if(isset($_SESSION['usuario'])){
      <div id="cuerpo1">
         <h3>Datos de la Persona</h3>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" class="validar">
+        <input type="text" id="nombre" class="validar letras">
         <label for="apellido" >Apellido:</label>
-        <input type="text" id="apellido" class="validar">
+        <input type="text" id="apellido" class="validar  letras">
         <label for="cedula">Cedula:</label>
-        <input type="text" id="cedula" class="validar">
+        <input type="text" id="cedula" class="validar numeros">
       </div>
       <div id="cuerpo2">
         <input type="button" value="Siguiente" id="boton1" class="boton" >
@@ -53,18 +53,18 @@ if(isset($_SESSION['usuario'])){
         <div id="bloque1">
             <h3>Vehiculo</h3>
             <label for="matricula">Matricula:</label>
-            <input type="text" id="matricula" class="validar">
+            <input type="text" id="matricula" class="validar numerosLetras">
             <label for="placa">Placa:</label>
-            <input type="text" id="placa" class="validar">
+            <input type="text" id="placa" class="validar numerosLetras">
             <label for="modelo">Marca:</label>
-            <input type="text" id="marca" class="validar">
+            <input type="text" id="marca" class="validar  letras">
         </div>
         
         <div id="bloque2">
             <label for="modelo">Modelo:</label>
-            <input type="text" id="modelo" class="validar">
+            <input type="text" id="modelo" class="validar numerosLetras">
             <label for="modelo">Color:</label>
-            <input type="text" id="color" class="validar">
+            <input type="text" id="color" class="validar  letras">
         </div>
         
       </div>
