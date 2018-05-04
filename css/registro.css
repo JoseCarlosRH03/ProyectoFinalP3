@@ -2,9 +2,14 @@
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     background-color: #0F218D;
     margin: 0;
+}
+
+#atras{
+    margin-left: 5px;
+    margin-right: 20%;
+    width: 50px;
 }
 
 #cuerpo{
@@ -120,8 +125,8 @@ input{
 }
 
 #datos{
-    width:50%;
-    height: 320px;
+    width:80%;
+    height: 350px;
     margin: auto;
     color: white;
     border: solid 2px ;
@@ -133,6 +138,7 @@ input{
     -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    padding-right: 25px;
     display:none;
 }
 #foto{
@@ -149,8 +155,12 @@ input{
 }
 
 #bloque2_datos,#bloque3_datos,#bloque1_datos{
-    margin-top: 15px;
-    width: 100%;
+    margin-top: 5px;
+    width: 50%;
+}
+
+#codigoQR{
+    height: 280px;
 }
 
 #bloque2_datos input,#bloque3_datos input,#bloque1_datos input{
@@ -164,15 +174,20 @@ color: white;
 }
 
 #botones_datos{
+    width: 50%;
+    height: 50px;
     display: flex;
     flex-direction:row;
+    
 }
 #botones_datos input{
 display: inline;
-width:13%;
+width:16%;
 margin: auto;
 margin-bottom: 5px;
 }
+
+
 /*forma*/
 
 a {

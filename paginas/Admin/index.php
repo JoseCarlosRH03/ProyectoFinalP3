@@ -19,18 +19,24 @@ if(isset($_SESSION['usuario'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/subIndex.css">
     <title>Document</title>
 </head>
 <body>
     <section>
      <header>
-         <img src="../../img/logo-uasd_cambio4.jpg" alt="" height="100px"/>
+         <img src="../../img/cuerpo.png" alt=""/>
         <nav>
-            <a href="#">Recuperar Contraseña</a>
+            <a href="#" id="boton_menu">menu</a>
         </nav>
      </header>
      <div id="cuerpo"> 
-       
+      <div id="menu">
+        <a href="">Reportes</a>
+        <a href="">Mantenimiento de Empleados</a>
+        <a href="">obcion3</a>
+     </div>
+     
      </div>
      <footer>
         <p>Universidad Autónoma de Santo Domingo (UASD)</p>
@@ -38,5 +44,6 @@ if(isset($_SESSION['usuario'])){
     </section>
     
 <script src="../../js/jquery-min.js"></script>       
+<script src="../../js/menu.js"></script>       
 </body>
 </html>

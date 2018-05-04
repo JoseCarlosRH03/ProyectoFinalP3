@@ -25,9 +25,9 @@ if(isset($_SESSION['usuario'])){
 <body>
     <section>
      <header>
-         <img src="../../img/logo-uasd_cambio4.jpg" alt="" height="100px"/>
+         <img src="../../img/login1.jpg" alt="" height="100px"/>
         <nav>
-            <a href="#">Recuperar Contraseña</a>
+            <a href="#">.</a>
         </nav>
      </header>
      <div id="cuerpo"> 

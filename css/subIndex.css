@@ -1,0 +1,41 @@
+header{
+    width:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    border-color: #0F218D;
+    border-width: 4px 0 0 0;
+}
+
+#cuerpo{
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu{
+    width: 10%;
+    height: 211.2px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0F218D;
+    border-top:  2px solid wheat;
+    border-radius:0  0 5px 0; 
+    opacity: 0;
+}
+
+#menu a{
+text-decoration: none;
+margin: 0; 
+padding:20px 10px 20px 10px;
+width: 84%;
+text-align: center;
+border-bottom:  2px solid wheat;
+}
+
+#menu a:hover{
+    
+  text-decoration: underline;
+}
