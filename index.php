@@ -22,7 +22,7 @@
                             <h3>Acceso al Sistema</h3>
                             <div>
                                 <label for="nombre"> Nombre:<signo>*</signo></label>
-                                <input type="text" id="nombre" name="nombre" class="letra">
+                                <input type="text" id="nombre" name="nombre" class="letras">
                                 <ul id="errorNombre">
                     
                                 </ul>
@@ -50,6 +50,7 @@
     </section>
     
 <script src="js/jquery-min.js"></script>      
-<script src="js/index.js"></script>   
+<script src="js/index.js"></script>  
+<script src="js/validador.js"></script>  
 </body>
 </html>

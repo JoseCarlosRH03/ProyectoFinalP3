@@ -80,25 +80,25 @@ if(isset($_SESSION['usuario'])){
        <div id="datos_p">
         <div  id="bloque1_datos">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre_datos">
+        <input type="text" id="nombre_datos" name="nombre" disabled>
         <label for="apellido" >Apellido:</label>
-        <input type="text" id="apellido_datos">
+        <input type="text" id="apellido_datos" name="apellido" disabled>
         <label for="cedula">Cedula:</label>
-        <input type="text" id="cedula_datos">
+        <input type="text" id="cedula_datos" name="cedula" disabled>
         </div>
          <div id="bloque2_datos">
             <label for="matricula">Matricula:</label>
-            <input type="text" id="matricula_datos">
+            <input type="text" id="matricula_datos" name="matricula"  disabled>
             <label for="placa">Placa:</label>
-            <input type="text" id="placa_datos">
+            <input type="text" id="placa_datos" name="placa"  disabled>
             <label for="modelo">Marca:</label>
-            <input type="text" id="marca_datos">
+            <input type="text" id="marca_datos" name="marca"  disabled>
          </div>
          <div id="bloque3_datos">
             <label for="modelo">Modelo:</label>
-            <input type="text" id="modelo_datos">
+            <input type="text" id="modelo_datos" name="modelo"  disabled>
             <label for="modelo">Color:</label>
-            <input type="text" id="color_datos">
+            <input type="text" id="color_datos" name="color"  disabled>
             </div>
             <div id="codigoGR" width="250px" >
                 <h3>Codigo QR</h3>
@@ -116,6 +116,8 @@ if(isset($_SESSION['usuario'])){
     </section>
     
 <script src="../../js/jquery-min.js"></script>  
-<script src="../../js/registro.js"></script>       
+<script src="../../js/registro.js"></script>
+<script src="../../js/validador.js"></script>  
+<script src="../../js/codificar.js"></script>      
 </body>
 </html>

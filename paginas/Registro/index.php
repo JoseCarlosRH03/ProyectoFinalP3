@@ -33,8 +33,8 @@ if(isset($_SESSION['usuario'])){
      <div id="cuerpo"> 
       <div id="menu">
         <a href="insertar.php">Insertar Usuario</a>
-        <a href="">Modificar Usuario</a>
-        <a href="">Eliminar Usuario</a>
+        <a href="modificar.php">Modificar Usuario</a>
+        <a href="eliminar.php">Eliminar Usuario</a>
      </div>
      
      </div>
@@ -44,6 +44,7 @@ if(isset($_SESSION['usuario'])){
     </section>
     
 <script src="../../js/jquery-min.js"></script>       
-<script src="../../js/menu.js"></script>       
+<script src="../../js/menu.js"></script>  
+<script src="../../js/validador.js"></script>      
 </body>
 </html>

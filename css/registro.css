@@ -141,11 +141,13 @@ input{
     padding-right: 25px;
     display:none;
 }
+
 #foto{
     width: 100px;
     margin-left:4% ;
     margin-top: -50px;
 }
+
 #datos_p{
     height: 70%;
     display: flex;
@@ -180,6 +182,7 @@ color: white;
     flex-direction:row;
     
 }
+
 #botones_datos input{
 display: inline;
 width:16%;

@@ -32,7 +32,7 @@ if(isset($_SESSION['usuario'])){
      </header>
      <div id="cuerpo"> 
       <div id="menu">
-        <a href="">Reportes</a>
+        <a href="reportes.php">Reportes</a>
         <a href="">Mantenimiento de Empleados</a>
         <a href="">obcion3</a>
      </div>
@@ -44,6 +44,7 @@ if(isset($_SESSION['usuario'])){
     </section>
     
 <script src="../../js/jquery-min.js"></script>       
-<script src="../../js/menu.js"></script>       
+<script src="../../js/menu.js"></script>  
+<script src="../../js/validador.js"></script>       
 </body>
 </html>
