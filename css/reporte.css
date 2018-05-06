@@ -1,6 +1,6 @@
 
-#buscador{
-    width:40%;
+#cargador_degrafico{
+    width:10%;
     height: 70px;   
     padding: 10px;
     margin: 5px;
@@ -9,12 +9,12 @@
     border-radius: 5px;
     display: flex;
     flex-direction:column;
+    justify-content: space-between;
     border-color:  #0F218D;
     background-color: rgba(15,33,141,0.8);
     -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
-    
 }
 
 form{
@@ -29,4 +29,17 @@ form{
 
 #datos form img{
     display: none;
+}
+
+#quitar_obsiones{
+    margin-top: 5px;
+}
+
+#area{
+ width:100%;
+ height:470px;
+}
+
+footer{
+    position: relative;
 }

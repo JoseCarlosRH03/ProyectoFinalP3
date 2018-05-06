@@ -23,4 +23,8 @@ $(document).ready(function(){
         $('#datos').slideDown(1000);
         $('#datos form img').delay(1000).show(1000);
     });
+
+    $('#quitar_obsiones').on('click',function(){
+        $('#cargador_degrafico').hide(1000);
+    });
 });
