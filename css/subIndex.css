@@ -17,7 +17,7 @@ header{
 
 #menu{
     width: 10%;
-    height: 211.2px;
+    height: 242.2px;
     display: flex;
     flex-direction: column;
     background-color: #0F218D;
@@ -38,4 +38,8 @@ border-bottom:  2px solid wheat;
 #menu a:hover{
     
   text-decoration: underline;
+}
+
+.sub_grafico{
+    display: none;
 }

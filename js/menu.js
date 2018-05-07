@@ -6,10 +6,10 @@ $(document).ready(function(){
         $('#menu').slideToggle(1000);
     });
     
-    $('#cuerpo').on('click',function(){
+  /*  $('#cuerpo').on('click',function(){
         $('#menu').css({"opacity":"1"});
         $('#menu').slideUp(1000);
-    });
+    });*/
     
     $('#buscarButoon').on('click',function(){
         $('#datos').hide();
@@ -27,4 +27,12 @@ $(document).ready(function(){
     $('#quitar_obsiones').on('click',function(){
         $('#cargador_degrafico').hide(1000);
     });
+
+    $('#efecto_reporte').on('click',function(){
+        $('.otros').slideToggle();
+        $('.sub_grafico').slideToggle(1000);
+        
+    });
+
+    
 });

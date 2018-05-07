@@ -35,7 +35,6 @@ if(isset($_SESSION['usuario'])){
      <div id="buscador">
          <form action="">
             <select name="cars">
-                <option value="nombre">Nombre</option>
                 <option value="cedula">Cedula</option>
                 <option value="placa">Placa</option>
                 <option value="Matricula">Matricula</option>

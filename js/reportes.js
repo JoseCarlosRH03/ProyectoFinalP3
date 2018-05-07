@@ -1,12 +1,14 @@
 $(document).ready(function(){
-var id=1;
-var gestor = $('#a0');
-var largo = 470;
-$("#Agregar_grafico").on('click',function(e){
-    $('#cuerpo').css({ "height": (largo+470)+"px"});
-    $('#area').append(gestor.html());
 
-});
+    $('#agregartexto').on('click',function(){
+      
+       $('#parrafos').append('<p>'+ $('#cargador_de_texto').val() + '</p>'); 
+       $('#cargador_de_texto').val('');
+    });
 
-
+    $('#agregartitulo').on('click',function(){
+      
+        $('#parrafos').append('<h2>'+ $('#cargador_de_texto').val() + '</h2>'); 
+        $('#cargador_de_texto').val('');
+     });
 });

@@ -32,9 +32,12 @@ if(isset($_SESSION['usuario'])){
      </header>
      <div id="cuerpo"> 
       <div id="menu">
-        <a href="reportes.php">Reportes</a>
-        <a href="">Mantenimiento de Empleados</a>
-        <a href="">obcion3</a>
+      <a  id="efecto_reporte">Reportes</a>
+        <a href="barras.php" class="sub_grafico">grafico Barras</a>
+        <a href="lineas.php" class="sub_grafico">grafico de lineas</a>
+        <a href=""class="sub_grafico">grafico3</a>
+        <a href="" class="otros">Mantenimiento de Empleados</a>
+        <a href="" class="otros">obcion3</a>
      </div>
      
      </div>
