@@ -34,7 +34,7 @@ if(isset($_SESSION['usuario'])){
      <div id="imagenytitulo">
        <img src="../../img/login1.jpg" alt="">
      </div>
-     <div id="grafico-1" class="grafico">
+     <div id="grafico-3" class="grafico">
      <h2>Grafico de Barras</h2>
      </div>
      <div id="tablagrafico">
@@ -66,6 +66,6 @@ if(isset($_SESSION['usuario'])){
 <script src="../../js/code/highcharts.js"></script>
 <script src="../../js/code/highcharts-3d.js"></script>
 <script src="../../js/code/modules/exporting.js"></script>
-<script src="../../js/grafico1.js"></script>
+<script src="../../js/grafico3.js"></script>
 </body>
 </html>

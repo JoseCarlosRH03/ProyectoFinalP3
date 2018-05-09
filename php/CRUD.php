@@ -25,9 +25,7 @@ class CRUD
     return  $this->resultado;
 
      }else{
-
        echo("error");
-
      }
    }
 }
