@@ -106,7 +106,6 @@ $.ajax({ url:'../../php/code.php', type: 'POST',dataType:'json', data: datos, be
      
 })
 .done(function(val){
-alert(val);
 if(val){
    $('#codigoGR').empty();
    $('#codigoGR').qrcode(val);

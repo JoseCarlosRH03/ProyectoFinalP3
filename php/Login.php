@@ -12,7 +12,6 @@ class Login {
     $this->crud = $valor;
    }
   
-   
   public function CargarUsuario ($nombre,$password){
     
     $this->datos = $this->crud->SelectEmpleado($nombre,$password);  

@@ -33,11 +33,11 @@ if(isset($_SESSION['usuario'])){
      <div id="cuerpo"> 
       <div id="menu">
       <a  id="efecto_reporte">Reportes</a>
-        <a href="barras.php" class="sub_grafico">grafico Barras</a>
+        <a href="barras.php" class="sub_grafico">grafico de Barras</a>
         <a href="lineas.php" class="sub_grafico">grafico de lineas</a>
         <a href="pastel.php"class="sub_grafico">grafico de pastel</a>
         <a href="" class="otros">Mantenimiento de Empleados</a>
-        <a href="" class="otros">obcion3</a>
+        <a href="" class="otros">opcion3</a>
      </div>
      
      </div>
