@@ -29,7 +29,7 @@
                             </div>
                             <div>
                                 <label for="contrasena">Password:<signo>*</signo></label>
-                                <input type="password"  id="contrasena" name="password">  
+                                <input type="password"  id="contrasena" name="password" class="password">  
                                 <ul id="errorPassword">
                     
                                 </ul>

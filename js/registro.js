@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var datosFormulario;
-
+    var qr;
 $('#boton1').on('click',function(){
 
     var persona = $('#persona input');    
@@ -100,13 +100,14 @@ d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo
   
 var datos = { "nombre":datosFormulario[0][0].value,"apellido":datosFormulario[0][1].value,
 "cedula":datosFormulario[0][2].value,"matricula":datosFormulario[0][4].value,"placa":datosFormulario[0][5].value,
-"marca":datosFormulario[0][6].value, "modelo":datosFormulario[0][7].value, "color":datosFormulario[0][8].value}
+"marca":datosFormulario[0][6].value, "modelo":datosFormulario[0][7].value, "color":datosFormulario[0][8].value,"qr":''}
 
 $.ajax({ url:'../../php/code.php', type: 'POST',dataType:'json', data: datos, beforeSend: function(){}
      
 })
 .done(function(val){
 if(val){
+    qr = val;
    $('#codigoGR').empty();
    $('#codigoGR').qrcode(val);
 }
@@ -126,6 +127,13 @@ $('#boton4').on('click',function(){
 });
 
 $('#boton5').on('click',function(){
-  
+    datos.qr = qr;
+    $.ajax({ url:'../../php/insertarPersona.php', type: 'POST',dataType:'json', data: datos, beforeSend: function(){}
+     
+})
+.done(function(val){
+
+}) 
+
 });
 });

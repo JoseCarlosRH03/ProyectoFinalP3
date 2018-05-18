@@ -1,5 +1,5 @@
  <?php
-  
+  include_once("CRUD.php");
 class Login {
 
   private $crud;
@@ -15,7 +15,7 @@ class Login {
   public function CargarUsuario ($nombre,$password){
     
     $this->datos = $this->crud->SelectEmpleado($nombre,$password);  
-    $this->usuario = array ($this->datos[1],$this->datos[2],$this->datos[5]); 
+    $this->usuario = array ($this->datos[1],$this->datos[2],$this->datos[4]); 
     $this->session =  $this->usuario;
     
     if( $this->usuario != null ){

@@ -1,0 +1,11 @@
+<?php
+$_POST['nombre']; 
+$_POST['apellido']; 
+$_POST['cedula']; 
+$_POST['matricula']; 
+$_POST['placa']; 
+$_POST['marca']; 
+$_POST['modelo']; 
+$_POST['color'];
+$_POST['qr'];
+?>
