@@ -1,28 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function(e){
 
     var datosFormulario;
     var qr;
-$('#boton1').on('click',function(){
-
-    var persona = $('#persona input');    
-
-    for(var x=0; x <= 2; x++)
-    {
-        if( persona[x].value == '' || persona[x].value == null )
-        {
-            e.preventDefault(); 
-        }
-    }
-    
-    $('.boton').attr("disabled", false);
-    $('#persona').hide();
-    $('#vehiculo').fadeIn(1000);
-    $('#a2').css({
-        "color":"black",
-        "background":"white" 
-    })
-    $( "<style> #a2:before { border-left:10px solid  white; }</style>" ).appendTo( "#a2" );
-});
+    var datosconfirmar;
 
 $('#boton2').on('click',function(){
     $('#vehiculo').hide();
@@ -98,16 +78,17 @@ correctLevel:2,background:"#ffffff",foreground:"#000000"},h);return this.each(fu
 j=Math.ceil((f+1)*b)-Math.floor(f*b);d.fillRect(Math.round(i*b),Math.round(f*e),g,j)}}else{a=new o(h.typeNumber,h.correctLevel);a.addData(h.text);a.make();c=r("<table></table>").css("width",h.width+"px").css("height",h.height+"px").css("border","0px").css("border-collapse","collapse").css("background-color",h.background);d=h.width/a.getModuleCount();b=h.height/a.getModuleCount();for(e=0;e<a.getModuleCount();e++){f=r("<tr></tr>").css("height",b+"px").appendTo(c);for(i=0;i<a.getModuleCount();i++)r("<td></td>").css("width",
 d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo(f)}}a=c;jQuery(a).appendTo(this)})}})(jQuery);
   
-var datos = { "nombre":datosFormulario[0][0].value,"apellido":datosFormulario[0][1].value,
+datosconfirmar = { "nombre":datosFormulario[0][0].value,"apellido":datosFormulario[0][1].value,
 "cedula":datosFormulario[0][2].value,"matricula":datosFormulario[0][4].value,"placa":datosFormulario[0][5].value,
 "marca":datosFormulario[0][6].value, "modelo":datosFormulario[0][7].value, "color":datosFormulario[0][8].value,"qr":''}
 
-$.ajax({ url:'../../php/code.php', type: 'POST',dataType:'json', data: datos, beforeSend: function(){}
+$.ajax({ url:'../../php/code.php', type: 'POST',dataType:'json', data: datosconfirmar, beforeSend: function(){}
      
 })
 .done(function(val){
 if(val){
-    qr = val;
+     
+datosconfirmar["qr"] = val;
    $('#codigoGR').empty();
    $('#codigoGR').qrcode(val);
 }
@@ -127,11 +108,15 @@ $('#boton4').on('click',function(){
 });
 
 $('#boton5').on('click',function(){
-    datos.qr = qr;
-    $.ajax({ url:'../../php/insertarPersona.php', type: 'POST',dataType:'json', data: datos, beforeSend: function(){}
-     
+    $.ajax({ url:'../../php/insertarPersona.php', type: 'POST',dataType:'json', data: datosconfirmar, beforeSend: function(){}
 })
 .done(function(val){
+   if(val != 2){
+        alert('error');
+   }else{
+        location.reload();
+   }
+
 
 }) 
 

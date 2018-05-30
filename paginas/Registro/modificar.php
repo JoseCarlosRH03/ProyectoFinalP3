@@ -34,13 +34,13 @@ if(isset($_SESSION['usuario'])){
  <div id="cuerpo">
      <div id="buscador">
          <form action="">
-            <select name="cars">
+            <select name="bucador"  id="aaa">
                 <option value="cedula">Cedula</option>
                 <option value="placa">Placa</option>
                 <option value="Matricula">Matricula</option>
             </select>
-            <input type="text"  placeholder="dato correspondiente" id=inputtext>
-            <input type="button" value="Buscar" id=inputbutton>
+            <input type="text"  placeholder="dato correspondiente" id=inputtext class="cedula">
+            <input type="button" value="Buscar" id="inputbutton">
             <p>Selecciones el metodo de busqueda y complete el campo</p>
          </form> 
      </div>
@@ -90,6 +90,7 @@ if(isset($_SESSION['usuario'])){
     
 <script src="../../js/jquery-min.js"></script>  
 <script src="../../js/menu.js"></script>
+<script src="../../js/validadorDelModificar.js"></script>
 <script src="../../js/validador.js"></script>  
 <script src="../../js/codificar.js"></script>      
 </body>

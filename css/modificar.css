@@ -57,7 +57,6 @@ form{
 #bloque2_datos,#bloque3_datos,#bloque1_datos{
     margin-top: 5px;
     width: 50%;
-    
 }
 
 #codigoQR{
@@ -85,7 +84,6 @@ color: white;
     height: 50px;
     display: flex;
     flex-direction:row;
-    
 }
 
 #botones_datos input{
@@ -126,4 +124,18 @@ form{
 
 #datos form img{
     display: none;
+}
+
+#radio{
+    display: flex;
+    flex-direction: row;
+}
+
+.radio1{
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+texto{
+    margin-top: 8px;
 }

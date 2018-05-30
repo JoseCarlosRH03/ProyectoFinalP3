@@ -36,7 +36,7 @@ if(isset($_SESSION['usuario'])){
         <a href="barras.php" class="sub_grafico">grafico de Barras</a>
         <a href="lineas.php" class="sub_grafico">grafico de lineas</a>
         <a href="pastel.php"class="sub_grafico">grafico de pastel</a>
-        <a href="" class="otros">Mantenimiento de Empleados</a>
+        <a href="mantenimiento.php" class="otros">Mantenimiento de Empleados</a>
         <a href="" class="otros">opcion3</a>
      </div>
      

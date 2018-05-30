@@ -11,28 +11,30 @@ class CRUD
 
    public function __construct(){ }
 
-   public function GetCoenxion()
+   private function GetConexion()
    {
     return dbc::GetConexion();
    } 
  
    public function SelectEmpleado($nombre,$contrasena)
    { 
-    $this->busqueda = $this->GetCoenxion()->prepare('SELECT * FROM empleados WHERE username = :nombre AND password = :contrasena AND estatus = :activo');
+    $this->busqueda = $this->GetConexion()->prepare('SELECT * FROM empleados WHERE username = :nombre AND password = :contrasena AND estatus = :activo');
     $this->busqueda->execute(array(':nombre'=>$nombre , ':contrasena'=> $contrasena, ':activo'=> $this->status));
     return $this->Guardar_1();  
    }
 
-   public function InsertarPersona($nombre, $apellido, $cedula)
+   public function InsertarPersona($nombre, $apellido, $cedula,$qr)
    {
-    $this->insertar = $this->GetCoenxion()->prepare('INSERT INTO personas (	ID, nombre, apellido, cedula) Value(null,:nombre, :apellido, :cedula)');
-    $this->insertar->execute(array(':nombre'=>$nombre , 'apellido'=> $apellido, 'cedula'=> $this->cedula));
+    $this->insertar = $this->GetConexion()->prepare('INSERT INTO personas (nombre, apellido, cedula,sha1) Value
+    (:nombre, :apellido, :cedula, :sha1 )');
+    return $this->insertar->execute(array(':nombre'=>$nombre , ':apellido'=> $apellido, ':cedula'=> $cedula, ':sha1'=> $qr));
    }
    
-   public function InsertarVehiculo($ID, $modelo, $marca, $color,	$matricula, $idPersona )
+   public function InsertarVehiculo($modelo, $marca, $color,	$matricula,$placa, $idPersona )
    {
-    $this->insertar = $this->GetCoenxion()->prepare('INSERT INTO vehiculo (ID, modelo, marca, color,	matricula, idPersona ) Value(null,:modelo, :marca, :color, :matricula, :idPersona)');
-    $this->insertar->execute(array(':modelo'=>$modelo , ':marca'=> $marca, ':color'=> $color,':matricula'=> $matricula,':idPersona'=> $idPersona));
+    $this->insertar = $this->GetConexion()->prepare('INSERT INTO vehiculo (modelo, marca, color, matricula, placa, idPersona) Value
+    (:modelo, :marca, :color, :matricula, :placa, :idPersona)');
+    return $this->insertar->execute(array(':modelo'=>$modelo ,':marca'=> $marca,':color'=> $color,':matricula'=> $matricula,':placa'=> $placa,':idPersona'=> $idPersona));
    }
 
    private function Guardar_1()
@@ -46,6 +48,8 @@ class CRUD
        echo("error");
      }
    }
+
+
 }
 ?>
 
