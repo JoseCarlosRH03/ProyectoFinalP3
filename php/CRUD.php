@@ -20,7 +20,16 @@ class CRUD
    { 
     $this->busqueda = $this->GetConexion()->prepare('SELECT * FROM empleados WHERE username = :nombre AND password = :contrasena AND estatus = :activo');
     $this->busqueda->execute(array(':nombre'=>$nombre , ':contrasena'=> $contrasena, ':activo'=> $this->status));
-    return $this->Guardar_1();  
+    
+    return $this->Guardar_1();
+   }
+
+   public function SelectPuerta($id)
+   {  
+    $this->busqueda = $this->GetConexion()->prepare('SELECT puerta.nombre FROM puerta WHERE puerta.id= (SELECT idPuerta FROM turnos WHERE idEmpleado = :id)');
+    $this->busqueda->execute(array(':id'=>$id));
+    
+    return $this->Guardar_1();
    }
 
    public function InsertarPersona($nombre, $apellido, $cedula,$qr)
@@ -52,4 +61,5 @@ class CRUD
 
 }
 ?>
+
 

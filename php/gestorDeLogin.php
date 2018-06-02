@@ -4,5 +4,6 @@ include_once("Login.php");
 
  $crud = new CRUD();
  $login =  new Login($crud);
- echo $login->CargarUsuario($_POST['nombre'], sha1($_POST['password'])); 
+ echo $login->CargarUsuario($_POST['nombre'],sha1($_POST['password'])); 
+ 
 ?>

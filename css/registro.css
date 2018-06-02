@@ -158,11 +158,13 @@ input{
 
 #bloque2_datos,#bloque3_datos,#bloque1_datos{
     margin-top: 5px;
-    width: 50%;
+    width: 25%;
 }
 
-#codigoQR{
-    height: 280px;
+#qr img{
+    height:25%;
+    position: absolute;
+    width: auto;
 }
 
 #bloque2_datos input,#bloque3_datos input,#bloque1_datos input{
@@ -233,4 +235,8 @@ a:before {
 
 #a1::before{
     border-left: 10px solid  white; 
+}
+
+select{
+    margin-left: 35px;
 }
